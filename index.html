@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EM4H – Empowered Mothers for Health</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      margin-top: 10px;
+      color: #2c3e50;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+    }
+    p, li {
+      color: #333;
+      font-size: 16px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .donate-btn {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #27ae60;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .donate-btn:hover {
+      background-color: #1e8449;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    input[type=submit] {
+      background-color: #2980b9;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: #1c5980;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 0;
+      color: #999;
+      font-size: 14px;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+        margin-top: 15px;
+      }
+    }
+
+    .social-links {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    .social-links a {
+      margin-right: 15px;
+      display: inline-block;
+    }
+    .social-links img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      transition: opacity 0.3s ease;
+    }
+    .social-links a:hover img {
+      opacity: 0.7;
+    }
+
+    .map-container {
+      margin-top: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>EM4H – Empowered Mothers for Health</h1>
+    </header>
+
+    <h2>About Us</h2>
+    <p>Empowered Mothers for Health (EM4H) is a non-profit grassroots organization committed to improving maternal and child health across underserved communities. We empower women through health education, provide access to essential medical resources, and partner with stakeholders to reduce preventable deaths.</p>
+
+    <h2>Our Vision</h2>
+    <p>We envision a society where no mother dies giving life, and every woman has access to knowledge and quality healthcare regardless of income or location.</p>
+
+    <h2>Our Mission</h2>
+    <p>To reduce maternal and child mortality by providing culturally relevant health education, outreach, and advocacy. We empower mothers to take charge of their health and well-being through information, access, and support.</p>
+
+    <h2>Our Core Values</h2>
+    <ul>
+      <li>Compassion – We care deeply about every mother and child.</li>
+      <li>Empowerment – We give women tools to advocate for themselves.</li>
+      <li>Integrity – We uphold transparency, trust, and respect.</li>
+      <li>Community Engagement – We work hand-in-hand with local communities.</li>
+      <li>Excellence – We strive for sustainable, high-impact results.</li>
+    </ul>
+
+    <h2>What We Do</h2>
+    <p>EM4H conducts mobile clinics, maternal health seminars, clean birth kit distributions, and community engagement programs to improve maternal and child outcomes in underserved areas.</p>
+
+    <h2>Donate</h2>
+    <p>Your donation helps EM4H provide clean birth kits, education, transportation for expectant mothers, and other vital services. Together we can save lives.</p>
+    <a href="https://www.paypal.com/ncp/payment/UA6AX46D4WDT4" class="donate-btn" target="_blank" rel="noopener noreferrer">Support EM4H</a>
+
+    <h2>Feedback</h2>
+    <p>We value your input! Please fill out the form below to share your thoughts or questions.</p>
+    <form action="https://formspree.io/f/mayvlpob" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="message">Your Comment:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <input type="submit" value="Submit Feedback" />
+    </form>
+
+    <h2>Connect With Us</h2>
+    <p>Follow us on social media to stay updated:</p>
+    <div class="social-links">
+      <a href="https://telegram.org/dl" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <img src="https://cdn-icons-png.flaticon.com/24/2111/2111646.png" alt="Telegram Icon" />
+      </a>
+      <a href="https://wa.me/qr/YP3B2YCRTQC4J1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp Icon" />
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61554486232941" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook Icon" />
+      </a>
+      <a href="https://www.tiktok.com/@sadiq.ahmad.sulai?_t=ZS-8wmUoaRrT2O&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <img src="https://cdn-icons-png.flaticon.com/24/3046/3046123.png" alt="TikTok Icon" />
+      </a>
+    </div>
+
+    <h2>Our Location</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.163446889001!2d9.438068714361902!3d11.49322619075255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b7f8a1c1eb2dbf%3A0x32e4c93049a9356e!2sBirnin%20Kudu%2C%20Jigawa%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1685351600000!5m2!1sen!2sus"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <h2>Address</h2>
+    <p>Yakubu Road, Birnin Kudu, Nigeria</p>
+
+    <footer>
+      &copy; 2025 Empowered Mothers for Health (EM4H). All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
