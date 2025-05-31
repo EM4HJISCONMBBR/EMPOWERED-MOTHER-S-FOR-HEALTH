@@ -1,0 +1,23 @@
+const CACHE_NAME = 'empowered-mother-cache-v1';
+const urlsToCache = [
+  '/EMPOWERED-MOTHER-S-FOR-HEALTH/',
+  '/EMPOWERED-MOTHER-S-FOR-HEALTH/index.html',
+  '/EMPOWERED-MOTHER-S-FOR-HEALTH/styles.css',  // adjust or remove if not used
+  '/EMPOWERED-MOTHER-S-FOR-HEALTH/app.js',      // adjust or remove if not used
+  '/EMPOWERED-MOTHER-S-FOR-HEALTH/icons/icon-192x192.png',
+  '/EMPOWERED-MOTHER-S-FOR-HEALTH/icons/icon-512x512.png'
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(urlsToCache))
+  );
+});
+
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => response || fetch(event.request))
+  );
+});
